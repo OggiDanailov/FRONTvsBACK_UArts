@@ -42,10 +42,10 @@ body, html {
 
 .wrapper {
 	border: 2px solid orange;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 1.5fr 0.5fr 1fr;
+	grid-template-columns: 1.2fr 0.5fr 1.2fr;
 }
 
 h2 {
@@ -72,13 +72,12 @@ h2 {
 	display: grid;
 	grid-template-columns: 1.2fr 0.8fr;
 	/*border: 2px solid green;*/
-
 }
 
 .text {
 	/*border: 2px solid;*/
 	margin: 10px 0;
-	padding: 5px;
+	padding: 5px;	
 }
 
 .phone {
@@ -118,6 +117,45 @@ nav li {
 	font-style: italic;
 }
 
+.text-a, .phone-a {
+	animation-name:html;
+  	animation-duration: 3s;   
+  	animation-timing-function: ease-in;
+}
+
+@keyframes html {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+.text-b, .phone-b {
+	opacity: 0;
+	animation-name: css;
+  	animation-delay: 3s;  
+  	animation-duration: 3s; 
+  	animation-timing-function: ease-in;
+  	 animation-fill-mode: forwards;
+}
+
+@keyframes css {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+.text-c, .phone-c {
+	animation-name: javascript;
+	opacity: 0;
+	animation-delay: 6s;
+  	animation-duration: 3s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes javascript {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
 
 .arrows {
 	/*border: 4px solid green;*/
@@ -143,7 +181,23 @@ nav li {
 	background-image: url("images/SliceRight.png");
 	width: 150px;
 	height: 150px;
+	opacity: 0;
 }
+
+.img-right {
+	animation-name: arrowRight;
+	animation-delay: 9s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes arrowRight {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+
 
 
 .back {
@@ -151,27 +205,89 @@ nav li {
 	flex-direction: column;
 	/*align-content: center;*/
 	position: relative;
+
 }
 
-.back div:nth-of-type(1) {
-	border: 2px solid red;
+
+.back-upper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border:4px solid green;
+	min-height: 250px;
 }
 
-.back div:last-child {
-	position:absolute;
+.image-db {
+	background-image: url("images/DB.png");
+	background-size: 100% 100%;
+/*	width: 100px;
+	height: 150px;*/
+	/*margin: 50px;*/
+	border: 2px solid orange;
+}
+
+
+/*.double-arrows {
+	background-image: url("images/doubleArrows.png");
+	background-size: 100% 100%;
+/*	width: 150px;
+	height: 150px;*/
+	/*margin: 50px;*/
+	border: 2px solid orange;
+}
+
+
+
+
+.lower-backend-box {
+	position: absolute;
 	bottom: 0;
 	border: 2px solid blue;
 	padding: 10px;
 }
 
-
-.double-arrows {
-	background-image: url("images/doubleArrows.png");
-	background-size: 100% 100%;
-	width: 150px;
-	height: 150px;
-	margin: 20px auto;
+.lower-backend-box p {
+	padding: 10px;
 }
+
+.backend-text {
+	opacity: 0;
+	animation-name: backendText;
+	animation-delay: 12s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes backendText {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+.up-arrow {
+	float: right;
+	opacity: 0;
+	animation-name: upArrow;
+	animation-delay: 15s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes upArrow {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+
+	
+
+
+
+
+
+
+
+
 
 
 

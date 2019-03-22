@@ -12,4 +12,4 @@ setInterval(function(){
 		submit.style.backgroundColor = 'black'
 		submit.style.fontSize = "6px"
 	}
-}, 1000)
+}, 2000)
