@@ -1,0 +1,192 @@
+/*Primary Colors
+#d22630
+#000000
+#6a737b
+#ffffff
+
+Secondary Colors
+#d22630
+#df5257
+#e77d81
+#efa8ab
+#f7d3d5
+#ffffff
+
+#6a737b
+#878f95
+#a5abaf
+#c3c7ca
+#e1e3e4
+#ffffff
+
+Main Fonts
+Museo Sans 300, 500, 700, 900*/
+
+
+
+@font-face {
+  font-family: museo_500;
+  src: url(MuseoSans_500/Fonts/MuseoSans_500.otf);
+}
+
+@font-face {
+  font-family: museo_300;
+  src: url(Museo_300/Museo_300.otf)
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: museo_300;
+}
+
+.wrapper {
+	border: 2px solid orange;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1.5fr 0.5fr 1fr;
+}
+
+h2 {
+	text-align: center;
+	font-family: museo_500;
+}
+
+.container {
+	border-radius: 5px;
+	/*height: 600px;*/
+	margin: 5px;
+}
+
+.front {
+	background-color: #d22630;
+}
+
+.back {
+	background-color: #6a737b;
+}
+
+
+.front-interior {
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+	/*border: 2px solid green;*/
+
+}
+
+.text {
+	/*border: 2px solid;*/
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.phone {
+	width: 40%;
+	margin: 10px auto;
+	border: 2px solid;
+	border-radius: 5px;
+	height: 80%;
+	background-color: #6a737b;
+}
+
+nav {
+	width: 100%;
+	height: 20px;
+	background-color: black;	
+}
+
+nav li {
+	display: inline-block;
+	color: white;
+	font-size: 6px;
+	line-height: 20px;
+}
+
+#input-1, #input-2 {
+	width: 70%;
+}
+
+#input-2 {
+	border-radius: 5px;
+	border: 1px solid white;
+	margin: 10px 10px;
+	background-color: black;
+	color: #ffffff;
+	font-size: 6px;
+	text-align: center;
+	font-style: italic;
+}
+
+
+.arrows {
+	/*border: 4px solid green;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-left, .img-right {
+	/*border: 2px solid;*/
+	background-size: 100% 100%;
+	margin: 40px 0;
+}
+
+.img-left {
+	background-image: url("images/SliceLeft.png");
+	width: 150px;
+	height: 150px;
+}
+
+.img-right {
+	background-image: url("images/SliceRight.png");
+	width: 150px;
+	height: 150px;
+}
+
+
+.back {
+	display: flex;
+	flex-direction: column;
+	/*align-content: center;*/
+	position: relative;
+}
+
+.back div:nth-of-type(1) {
+	border: 2px solid red;
+}
+
+.back div:last-child {
+	position:absolute;
+	bottom: 0;
+	border: 2px solid blue;
+	padding: 10px;
+}
+
+
+.double-arrows {
+	background-image: url("images/doubleArrows.png");
+	background-size: 100% 100%;
+	width: 150px;
+	height: 150px;
+	margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
