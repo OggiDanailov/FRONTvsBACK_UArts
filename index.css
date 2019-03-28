@@ -41,7 +41,7 @@ body, html {
 }
 
 .wrapper {
-	border: 2px solid orange;
+	/*border: 2px solid orange;*/
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
@@ -68,14 +68,14 @@ h2 {
 }
 
 
-.front-interior {
+.interior {
 	display: grid;
 	grid-template-columns: 1.2fr 0.8fr;
 	/*border: 2px solid green;*/
 }
 
 .text {
-	/*border: 2px solid;*/
+	border: 2px solid purple;
 	margin: 10px 0;
 	padding: 5px;	
 }
@@ -83,9 +83,9 @@ h2 {
 .phone {
 	width: 40%;
 	margin: 10px auto;
-	border: 2px solid;
+	border: 2px solid purple;
 	border-radius: 5px;
-	height: 80%;
+	min-height: 80%;
 	background-color: #6a737b;
 }
 
@@ -172,6 +172,7 @@ nav li {
 }
 
 .img-left {
+	opacity: 0;
 	background-image: url("images/SliceLeft.png");
 	width: 150px;
 	height: 150px;
@@ -198,13 +199,12 @@ nav li {
 }
 
 
-
-
 .back {
 	display: flex;
 	flex-direction: column;
 	/*align-content: center;*/
 	position: relative;
+	/*border: 3px solid orange;*/
 
 }
 
@@ -213,35 +213,31 @@ nav li {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	border:4px solid green;
-	min-height: 250px;
+	/*min-height: 250px;*/
 }
 
 .image-db {
 	background-image: url("images/DB.png");
 	background-size: 100% 100%;
-/*	width: 100px;
-	height: 150px;*/
-	/*margin: 50px;*/
-	border: 2px solid orange;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 70%;
+	margin: 50px auto;
+	/*border: 2px solid orange;*/
 }
 
-
-/*.double-arrows {
-	background-image: url("images/doubleArrows.png");
-	background-size: 100% 100%;
-/*	width: 150px;
-	height: 150px;*/
-	/*margin: 50px;*/
-	border: 2px solid orange;
+.list-names {
+	font-size: 8px;
+	margin: 5px 0;
+	padding: 5px;
+	color: black;
 }
-
-
 
 
 .lower-backend-box {
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0;
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 	padding: 10px;
 }
 
@@ -249,7 +245,14 @@ nav li {
 	padding: 10px;
 }
 
-.backend-text {
+.db-sign {
+	/*border: 2px solid orange;*/
+	position: relative;
+	top: 180px;
+	text-align: center;
+}
+
+/*.backend-text {
 	opacity: 0;
 	animation-name: backendText;
 	animation-delay: 12s;
@@ -261,10 +264,14 @@ nav li {
 @keyframes backendText {
   from{opacity:0;}
   to{opacity: 1;}
-}
+}*/
 
 .up-arrow {
-	float: right;
+	background-image: url("images/SliceUp.png");
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	width: 20%;
+	height: 200px;
 	opacity: 0;
 	animation-name: upArrow;
 	animation-delay: 15s;
