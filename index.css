@@ -43,7 +43,8 @@ body, html {
 .wrapper {
 	/*border: 2px solid orange;*/
 	width: 100%;
-	margin: 0 auto;
+	/*height: 100%;*/
+	/*margin: 0 auto;*/
 	display: grid;
 	grid-template-columns: 1.2fr 0.5fr 1.2fr;
 }
@@ -55,8 +56,11 @@ h2 {
 
 .container {
 	border-radius: 5px;
+	width: 100%;
+	height: 100%;
 	/*height: 600px;*/
 	margin: 5px;
+	/*border: 2px solid green;*/
 }
 
 .front {
@@ -77,16 +81,18 @@ h2 {
 .text {
 	/*border: 2px solid purple;*/
 	margin: 10px 0;
-	padding: 5px;	
+	padding: 5px;
+	min-height: 150px;	
 }
 
 .phone {
 	width: 40%;
 	margin: 10px auto;
-	border: 2px solid purple;
+	border: 2px solid;
 	border-radius: 5px;
 	min-height: 80%;
 	background-color: #6a737b;
+	min-height: 150px;
 }
 
 nav {
@@ -198,22 +204,20 @@ nav li {
   to{opacity: 1;}
 }
 
+.img-left {
+	animation-name: arrowLeft;
+	animation-delay: 18s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
 
-/*.back {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	position: relative;
-	border: 3px solid orange;
-
-}*/
+@keyframes arrowLeft {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
 
 
-/*.back-upper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border:4px solid green;
-}*/
 
 .image-db {
 	background-image: url("images/DB.png");
@@ -232,38 +236,55 @@ nav li {
 	color: black;
 }
 
-
-.lower-backend-box {
-	/*position: absolute;*/
-	bottom: 0;
-	/*border: 2px solid blue;*/
-	padding: 10px;
-}
-
-.lower-backend-box p {
-	padding: 10px;
-}
-
 .db-sign {
 	/*border: 2px solid orange;*/
 	position: relative;
-	top: 180px;
-	text-align: center;
+	top: 35%;
+	text-align: center;	
 }
 
-/*.backend-text {
+.text-d, .image-db {
 	opacity: 0;
-	animation-name: backendText;
+	animation-name: db-appearance;
 	animation-delay: 12s;
   	animation-duration: 2s;   
   	animation-timing-function: ease-in;
   	animation-fill-mode: forwards;
 }
 
-@keyframes backendText {
+@keyframes db-appearance {
   from{opacity:0;}
   to{opacity: 1;}
-}*/
+}
+
+.text-e, .phone-e {
+	opacity: 0;
+	animation-name: db-search;
+	animation-delay: 14s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes db-search {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+
+.text-f, .phone-f {
+	opacity: 0;
+	animation-name: db-found;
+	animation-delay: 16s;
+  	animation-duration: 2s;   
+  	animation-timing-function: ease-in;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes db-found {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
 
 .up-arrow {
 	background-image: url("images/SliceUp.png");
