@@ -1,0 +1,103 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	border: 3px solid orange;
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr 1.2fr;
+}
+
+.front, .back {
+	display: grid;
+	grid-template-columns: 1.4fr .7fr;
+}
+.titles {
+	text-align: center;
+}
+
+.arrows {
+	border: 2px solid green;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.arrow-left {
+	background-image: url("images/SliceLeft.png");
+	background-size: 100% 100%;
+	margin: 0 auto;
+	width: 70%;
+	height: 70%;
+	border: 2px solid yellow;
+}
+
+.arrow-right {
+	background-image: url("images/SliceRight.png");
+	background-size: 100% 100%;
+	margin: 0 auto;
+	width: 70%;
+	height: 70%;
+	border: 2px solid yellow;
+}
+
+.text {
+	padding: 20px;
+	border: 1px solid blue;
+}
+
+.phone-box {
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone {
+	width: 40%;
+	height: 80%;
+	border: 2px solid;
+}
+
+/*nav {
+	width: 100%;
+	background-color: black;
+	height: 20px;
+}
+
+nav li {
+	display: inline-block;
+	color: white;
+	
+	font-size: 5px;
+}*/
+
+.square {
+	width: 80%;
+	height: 300px;
+	margin: 20px auto;
+	border: 2px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.new-phone {
+	width: 20%;
+	height: 200px;
+	border: 6px solid black;
+}
+
+nav {
+	width: 100%;
+	background-color: black;
+	height: 40px;
+}
+
+nav li {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.8em !important;
+}
+
