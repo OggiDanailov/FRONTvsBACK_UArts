@@ -1,6 +1,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
+	font-size: 11pt;
 }
 
 .wrapper {
@@ -98,6 +99,19 @@ nav li {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 0.8em !important;
+	font-size: 0.3em;
 }
+
+@media all and (max-width: 880px){
+  body{
+    background-color: green;
+    -webkit-text-size-adjust: 100%;
+  }
+  nav li {
+  	font-size: 8pt;
+  	color: red;
+  }
+}
+
+
 
