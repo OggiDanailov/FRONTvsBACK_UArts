@@ -2,6 +2,7 @@ var submit = document.getElementsByClassName('submit-js')[0]
 var listNames = document.getElementsByClassName("list-names")
 
 
+
 setInterval(function(){
 	if(submit.style.backgroundColor == 'black'){
 		submit.style.color = 'black'
