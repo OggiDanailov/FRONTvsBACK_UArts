@@ -4,12 +4,12 @@
 }
 
 .wrapper {
-	/*border: 2px solid orange;*/
+	border: 2px solid orange;
 	width: 95%;
 	margin: 0 auto;
 }
 
-.wrapper h1, .wrapper h2, .wrapper p {
+ .instructions {
 	border: 2px solid cyan;
 	margin: 10px auto;
 	text-align: center;
@@ -34,41 +34,23 @@
 }
 
 .outcome-portion {
-	border: 2px solid cyan;
+	border: 2px solid tomato;
 }
-.code-portion #input-example, .code-portion #div-example, .code-portion #p-example, .code-portion #h3-example {
+#h1-example, #img-example, #p-example, #input-example {
 	margin: 0 auto;
 	cursor: pointer;
 	/*background-color: red;*/
 }
-#input-example:hover {
-	background-color: red;
-}
-#div-example:hover {
-	background-color: red;
-}
-#p-example:hover {
-	background-color: red;	
-}
 
-#h3-example:hover {
+#h1-example:hover, #img-example:hover, #p-example:hover, #input-example:hover {
 	background-color: red;
 }
 
-#input-destination, #div-destination, #p-destination, #h3-destination {
-	border: 2px solid black;
-	padding: 5px;
-	width: 90%;
-	margin: 10px auto;
+#h1-destination, #p-destination, #input-destination {
 	visibility: hidden;
 }
 
-#input-destination-css, #div-destination-css, #p-destination-css, #h3-destination-css {
-	border: 2px solid black;
-	padding: 5px;
-	width: 90%;
-	margin: 10px auto;
-}
+
 
 
 
